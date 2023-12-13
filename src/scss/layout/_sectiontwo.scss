@@ -1,22 +1,35 @@
-.sectiontwo{
+.sectiontwo {
     background-color: $white-two;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
 }
-.box{
+
+.box {
+    grid-column: 2/3;
     font-family: $fontText;
+    padding: 30px;
     font-size: 18px;
-    &__h3{
+
+    &__h3 {
         font-size: 20px;
     }
 }
-.buttom{
+
+.buttom {
     width: 184px;
     height: 45px;
     background-color: $orange;
     border-radius: 22.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__a{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 7px 1fr 2px;
+
+    &__a {
+        grid-column: 2/3;
+        grid-row: 2/3;
         text-decoration: none;
         color: $white;
         font-family: $fontText;
