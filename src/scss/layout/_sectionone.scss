@@ -1,14 +1,17 @@
 .section {
     font-family: $fontText;
+    
        &__div {
-        padding: 15px;
+        padding: 34px 15px 50px 15px;
+        line-height: 30px;
         &--se {
             color: $orange;  
-            font-size: 14px;      
+            font-size: 14px;   
         }
         &--h2{
             font-family: $fontHead;
             font-size: 24px;
+            margin-bottom: 11px;
         }
         &--p{
             
@@ -22,7 +25,8 @@
             height: 45px;
             width: 160px;  
             display: flex;    
-            justify-content: center;     
+            justify-content: center; 
+            margin-top: 10px;    
         }
         &--a >a{
             text-decoration: none;
