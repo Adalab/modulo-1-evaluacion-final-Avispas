@@ -1,44 +1,54 @@
 .header{
     background-image: url(../images/cover.jpeg);
-    background-size: cover;
-    height: 30vh;
+    background-size: 320%;
+    background-position: 40% 70%;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
+    height: 80vh;
+    
+   
     &__nav {
         background-color: $orange;
         height: 34px;
         width: 37px;
         position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        align-self: baseline;    
         
         &--img{
-            height: 11px;
-    
+            height: 11px;           
+            
         }
       
     }
-    &__div {
-        height: fit-content;
+    &__div {   
+        color: $white;  
         display: flex;
-        flex-direction: column;
-        
-        color: $white;    
+        flex-direction: column;    
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        gap: 15px;
+            
         &--h1{
             font-family: $fontHead;
             text-transform: uppercase;
             font-size: 30px;
+            line-height: 50px;
         }    
         &--p{
             font-family: $fontText;
+            line-height: 20px;
         }
     }
 }
 .circleTop{
     background-color: $white;
-    // No me coge las alturas
+    line-height: 40px;
     height: 37px;
     width: 36px;
     border-radius: 50%;
+    margin-bottom: 40px;
 }
