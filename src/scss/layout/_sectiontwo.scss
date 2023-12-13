@@ -4,7 +4,7 @@
     grid-template-columns: 15% 1fr 15%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
-    // line-height: 20px;
+    padding-bottom: 10px;
 } 
 .box {
     grid-column: 2/3;
@@ -12,23 +12,35 @@
     padding: 10px;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
     &__h3 {
         font-size: 20px;
         font-family: $fontHead;
+        margin-top: 20px;
     }
     &__h4{
         font-family: $fontHead;
+        margin-top: 5px;
     }
    
     &__buttom {
-        width: 184px;
-        height: 45px;
-        background-color: $orange;
-        border-radius: 22.5px;        
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+                
         &--a{         
         text-decoration: none;
         color: $white;
         font-size: 20px;
+        width: 184px;
+        height: 45px;
+        background-color: $orange;
+        border-radius: 22.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     }
 }
