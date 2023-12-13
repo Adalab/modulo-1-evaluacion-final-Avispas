@@ -1,0 +1,25 @@
+.sectiontwo{
+    background-color: $white-two;
+}
+.box{
+    font-family: $fontText;
+    font-size: 18px;
+    &__h3{
+        font-size: 20px;
+    }
+}
+.buttom{
+    width: 184px;
+    height: 45px;
+    background-color: $orange;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__a{
+        text-decoration: none;
+        color: $white;
+        font-family: $fontText;
+        font-size: 20px;
+    }
+}
