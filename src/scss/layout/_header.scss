@@ -1,0 +1,44 @@
+.header{
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &__nav {
+        background-color: $orange;
+        height: 34px;
+        width: 37px;
+        position: fixed;
+        
+        &--img{
+            height: 11px;
+    
+        }
+      
+    }
+    &__div {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        
+        color: $white;    
+        &--h1{
+            font-family: $fontHead;
+            text-transform: uppercase;
+            font-size: 30px;
+        }    
+        &--p{
+            font-family: $fontText;
+        }
+    }
+}
+.circleTop{
+    background-color: $white;
+    // No me coge las alturas
+    height: 37px;
+    width: 36px;
+    border-radius: 50%;
+}
