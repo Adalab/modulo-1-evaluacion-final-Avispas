@@ -1,24 +1,40 @@
 .section {
     font-family: $fontText;
     padding-left: 5px;
+    @media (min-width: 321px){
+        padding: 0 25px 0 20px;
+    }
     
        &__div {
         padding: 34px 15px 50px 15px;
         line-height: 30px;
         &--se {
             color: $orange;  
-            font-size: 14px;   
+            font-size: 14px; 
+            @media (min-width: 320px) {
+                font-size: 16px;
+                line-height: 30px;
+            } 
         }
         &--h2{
             font-family: $fontHead;
             font-size: 24px;
             margin-bottom: 11px;
+            @media (min-width: 320px) {
+                font-size: 32px;
+                line-height: 45px;
+            } 
         }
         &--p{
             
             font-size: 18px;
             color: $darkGrey;
             padding-bottom: 5px;
+            @media (min-width: 320px) {
+                font-size: 20px;
+                line-height: 30px;
+            } 
+            @media (min-width: 768px) {} 
         }
         &--a{
             text-decoration: none;            

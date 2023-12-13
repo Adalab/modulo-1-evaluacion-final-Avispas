@@ -9,6 +9,19 @@
         justify-content: center;
         &--img {
             height: 11px;
+            @media (min-width: 321px){
+                height: 14px;
+            }
+            @media (min-width: 769px) {
+                height: 14.3;
+            }
+        }
+        @media (min-width: 321px) {
+            height: 44px;
+            width: 42px;
+        }
+        @media (min-width: 769px) {
+            width: 45px;
         }
     }
 }
