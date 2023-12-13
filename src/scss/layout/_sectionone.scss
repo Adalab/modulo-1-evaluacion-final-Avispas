@@ -1,0 +1,34 @@
+.section {
+    font-family: $fontText;
+       &__div {
+        padding: 15px;
+        &--se {
+            color: $orange;  
+            font-size: 14px;      
+        }
+        &--h2{
+            font-family: $fontHead;
+            font-size: 24px;
+        }
+        &--p{
+            
+            font-size: 18px;
+            color: $darkGrey;
+        }
+        &--a{
+            text-decoration: none;            
+            border: 2px solid $orange;
+            border-radius: 22.5px;
+            height: 45px;
+            width: 160px;  
+            display: flex;    
+            justify-content: center;     
+        }
+        &--a >a{
+            text-decoration: none;
+            align-self: center;
+            color: $orange;
+            font-size: 20px;
+        }
+    }
+}
