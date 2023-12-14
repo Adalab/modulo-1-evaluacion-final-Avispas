@@ -1,4 +1,3 @@
-
 .footer{
     background-color: $darkGrey;
     color: $white;
@@ -11,6 +10,11 @@
     line-height: 30px;
     gap: 30px;
     padding-bottom: 35px;
+    @media (min-width: 321px){
+        height: 35vh;
+        flex-direction: row;
+        justify-content: center;
+    }
     &__cage{
         display: flex;
         flex-direction: column;
@@ -32,14 +36,15 @@
     height: 45px;
     background-color: $white;
     border-radius: 50%;
-    margin-top: -20px;  
+    // margin-top: -20px;  
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;     
+    transform: translateY(-20px);
     &__arrow{    
+        padding-top: 5px;
         align-self: center;
             }
-
 }
 .heart{
     color: $orange;

@@ -22,10 +22,17 @@
         font-size: 20px;
         font-family: $fontHead;
         margin-top: 20px;
+        @media (min-width: 320px){
+
+        }
+        
     }
     &__h4{
         font-family: $fontHead;
         margin-top: 5px;
+        @media (min-width: 320px) {
+         grid-row: 1/4;
+        }
     }
    
     &__buttom {
